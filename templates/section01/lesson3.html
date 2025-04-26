@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="/static/section01/lesson5/jquery.js"></script>
+</head>
+<body>
+    <div id="myReturn">Response for return page content</div>
+
+    <script>
+        // let _xml = new XMLHttpRequest();
+        // _xml.open("get", 'http://101.42.38.160/section01/lesson4_01', false)
+        // _xml.send()
+        // document.getElementById('myReturn').innerHTML = JSON.parse(_xml.responseText).result
+        $.ajax({
+            url: '/section01/lesson4_01',
+            success:function(data){
+                $('#myReturn').text(data.result)
+            }
+        })
+    </script>
+</body>
+</html>

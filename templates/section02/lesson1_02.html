@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="/static/utils.js"></script>
+    <script src="/static/jquery.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!--    section02_lesson1_02-->
+    <div id="return">Temp No Data Back section02_lesson1_02</div>
+    <button onclick="nextpage()">Next Page</button>
+</body>
+<script>
+    function nextpage(){
+        window.page ++;
+        $.ajax({
+            url: '/section02/lesson1_02_data_api?page=' + window.page,
+            success: function (data) {
+                $("#return").text(JSON.stringify(data))
+            }
+        })
+    }
+</script>
+<script>
+    window.page = 1
+    $.ajax({
+        url: '/section02/lesson1_02_data_api?page=1',
+        success: function (data) {
+            $("#return").text(JSON.stringify(data))
+        }
+    })
+</script>
+</html>

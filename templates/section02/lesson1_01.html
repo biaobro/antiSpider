@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="/static/utils.js"></script>
+    <script src="/static/jquery.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!--    section02_lesson1_01-->
+    <div id="return">Temp No Data Back section02_lesson1_01</div>
+
+</body>
+<script>
+    function stringToBinary(input) {
+        let binaryResult = "";
+        for (let i = 0; i < input.length; i++) {
+            let binaryChar = input.charCodeAt(i).toString(2);
+            binaryResult += ("00000000" + binaryChar).slice(-8);
+        }
+        console.log("stringToBinary", input, binaryResult)
+        return binaryResult;
+    }
+
+    function binaryToString(input) {
+        let str = '';
+        for (let i = 0; i < input.length; i += 8) {
+            let byte = input.slice(i, i + 8);
+            str += String.fromCharCode(parseInt(byte, 2));
+        }
+        console.log("binaryToString", input, str)
+        return str;
+    }
+
+    function simpleEncryptDecrypt(inputBinary, keyBinary) {
+        let result = '';
+        for (let i = 0; i < inputBinary.length; i++) {
+            result += inputBinary[i] === keyBinary[i % keyBinary.length] ? '0' : '1';
+        }
+        console.log("simpleEncryptDecrypt", inputBinary, keyBinary)
+        return result;
+    }
+
+    function simplify_des(input, key) {
+        let inputBinary = stringToBinary(input);
+        let keyBinary = stringToBinary(key);
+        // 加密或解密
+        let encryptedBinary = simpleEncryptDecrypt(inputBinary, keyBinary);
+        // 将二进制结果转换回字符串
+        let result = binaryToString(encryptedBinary);
+        console.log("simplify_des", input, key, result)
+        return result;
+    }
+
+    let text = "now time: " + getServerTime();
+    let key = "section02lesson1";
+    document.cookie = "token=" + btoa(simplify_des(text, key)) + ";path=/"; // cookie对于异常字符的传值并不友好，所以用base64进行一下编码为常见字符
+
+    // document.cookie = "token=123456;path=/"
+    $.ajax({
+        url: '/section02/lesson1_01_data_api',
+        success: function (data) {
+            $("#return").text(JSON.stringify(data))
+        }
+    })
+</script>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="/static/section01/lesson5/jquery.js"></script>
+</head>
+<body>
+    <div id="myReturn">Response for return page content</div>
+
+    <script>
+        function _string(str){
+            let sum = 0;
+            let num;
+            for (num of str.toString()){
+                sum += parseInt(num)
+            }
+            return sum
+        }
+
+        let _now_time = +new Date()
+        console.log(_now_time,_string(_now_time))
+
+        $.ajax({
+            url: "/section01/lesson5_data_api?token=" + _now_time + "|" + _string(_now_time),
+            success:function(data){
+                $('#myReturn').text(data.data)
+            }
+        })
+    </script>
+</body>
+</html>
