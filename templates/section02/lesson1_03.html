@@ -6,9 +6,22 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="/static/utils.js"></script>
+    <script src="/static/jquery.js"></script>
     <title>Document</title>
 </head>
 <body>
-    section02_lesson1_03
+    <!--    section02_lesson1_01-->
+    <!--  这里的内容实际会被api 接口返回的信息覆盖掉  -->
+    <div id="return">Temp No Data Back section02_lesson1_03</div>
+
+
 </body>
+<script>
+    $.ajax({
+        url: '/section02/lesson1_03_data_api',
+        success: function (data) {
+            $("#return").text(JSON.stringify(data))
+        }
+    })
+</script>
 </html>

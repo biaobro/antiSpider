@@ -60,8 +60,31 @@ def lesson1_02_data_api(request):
 
 
 def lesson1_03(request):
-    return render(request, "section02/lesson1_03.html")
+    token = request.COOKIES.get("token")
+
+    if token:
+        print("get token")
+        # 对 token 解密，得到时间值
+        key = "section02lesson1"
+        with open("/AntiSpider/section02/utils/lesson1_decode.js", "r", encoding="utf-8") as file:
+            result = execjs.compile(file.read()).call("decode", token, key)
+
+        # now time: 1745159783476
+        # 以空格为基准拆分 result 得到最后的时间值
+        _time = result.split(" ")[-1]
+        print("_time", _time)
+        print("time.time()", time.time())
+        # 如果前端的时间 与 服务端时间相差1s以内
+        if abs(time.time() - int(_time) / 1000) <= 100:
+            return render(request, "section02/lesson1_03.html")
+
+    print("not get token")
+    # 如果鉴权不通过，返回 js
+    # 如果鉴权通过，返回 html
+    # html 中是script ，浏览器会执行 script，把 token 设置到 cookie 中
+    with open("/AntiSpider/section02/utils/lesson1_3_cookie_anti_spider.html", encoding="utf-8") as f:
+        return HttpResponse(f.read())
 
 
 def lesson1_03_data_api(request):
-    return JsonResponse({"code": "1"})
+    return JsonResponse({"code": "success"})
