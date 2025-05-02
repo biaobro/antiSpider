@@ -12,4 +12,7 @@ urlpatterns = [
 
     path('lesson1_03', views.lesson1_03),
     path('lesson1_03_data_api', views.lesson1_03_data_api),
+
+    path('lesson2_01', views.lesson2_01),
+    path('lesson2_01_data_api', views.lesson2_01_data_api),
 ]

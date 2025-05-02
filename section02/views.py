@@ -88,3 +88,17 @@ def lesson1_03(request):
 
 def lesson1_03_data_api(request):
     return JsonResponse({"code": "success"})
+
+
+def lesson2_01(request):
+    return render(request, "section02/lesson2_01.html")
+
+
+from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.http import require_http_methods
+
+
+@csrf_exempt # 关闭CSRF校验
+@require_http_methods(["LINK"]) # 限制只接受LINK请求
+def lesson2_01_data_api(request):
+    return JsonResponse({"code": "success"})
