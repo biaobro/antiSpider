@@ -118,12 +118,13 @@ def lesson2_01_data_api(request):
 
     # 构造返回值，对返回值也进行加密
     import json
-    result = xorEncryptDecrypt(json.dumps({"code": _page}).encode(), key+"_response")
+    respEncrypt = xorEncryptDecrypt(json.dumps({"code": _page}).encode(), key+"_response")
+    print('backend:', respEncrypt)
     if abs(time.time() - int(_timeStamp) / 1000) <= 100:
         # 返回原文
         # return JsonResponse({"code": _page})
 
         # 返回密文
-        return HttpResponse({result})
+        return HttpResponse({respEncrypt})
     else:
         return JsonResponse({"code": "error"})

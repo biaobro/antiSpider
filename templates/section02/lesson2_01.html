@@ -15,6 +15,7 @@
     <div id="data"></div>
 </body>
 <script>
+    <!--  input 是字符串  -->
     function xorEncryptDecrypt(input, key) {
         let output = '';
         for (let i = 0; i < input.length; i++) {
@@ -29,31 +30,48 @@
         }
         return output;
     }
-
-
 </script>
 <script>
     window.page = 1;
     function nextpage(){
         let xhr = new XMLHttpRequest()
 
-        xhr.open("LINK", "/section02/lesson2_01_data_api", false)
+        // 设置响应体为字节，同步地需要去掉 open中的 false 参数，即使用异步请求方式
+        xhr.responseType = 'arraybuffer'
 
-        // 对请求值进行加密处理
+        xhr.open("LINK", "/section02/lesson2_01_data_api")
+
+        // 注册回调函数，在回调函数中处理页面展示
+        xhr.onload = function (){
+            // this.response 是 ArrayBuffer
+            // console.log('response', this.response)
+
+            // 对 ArrayBuffer 进行处理
+  		    const respDecrypt = new TextDecoder('utf-8').decode(new Uint8Array(this.response))
+            console.log('respDecrypt', respDecrypt)
+
+            // 对处理后的 ArrayBuffer 进行解密
+            let result = xorEncryptDecrypt(respDecrypt, key+"_response")
+            $("#data").text(JSON.parse(result)["code"])
+        }
+
+        // 前端对请求值进行加密处理
         let input = window.page.toString() + getServerTime()
         const key = "section02_lesson2_01"
-        let decrypt = xorEncryptDecrypt(input, key)
-        console.log(decrypt)
-        xhr.send((new TextEncoder()).encode(decrypt).buffer)
+        let reqEncrypt = xorEncryptDecrypt(input, key)
+        console.log('reqEncrypt', reqEncrypt)
+        xhr.send((new TextEncoder()).encode(reqEncrypt).buffer)
 
         // 将响应回显在页面
         // 如果服务端对返回值做了加密，前端也需要先解密
-        let result = xorEncryptDecrypt(xhr.response, key+"_response")
+        // 同步请求方式下的解密
+        // let result = xorEncryptDecrypt(xhr.response, key+"_response")
 
         // $("#data").text(JSON.parse(xhr.responseText)['code'])
 
         // result 还是 json 字典格式
-        $("#data").text(JSON.parse(result)["code"])
+        // 同步请求方式下的展示
+        // $("#data").text(JSON.parse(result)["code"])
 
         window.page ++;
     }
