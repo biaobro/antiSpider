@@ -101,4 +101,29 @@ from django.views.decorators.http import require_http_methods
 @csrf_exempt # 关闭CSRF校验
 @require_http_methods(["LINK"]) # 限制只接受LINK请求
 def lesson2_01_data_api(request):
-    return JsonResponse({"code": "success"})
+    def xorEncryptDecrypt(_input, _key):
+        output = b""
+        for i in range(len(_input)):
+            charCode = _input[i]  # 输入就是字节码，所以直接遍历，不需要再用 ord()转换
+            keyChar = _key[i % len(_key)]
+            keyCharCode = ord(keyChar)
+            encryptedCharCode = charCode ^ keyCharCode
+            output += chr(encryptedCharCode).encode()
+        return output
+
+    key = "section02_lesson2_01"
+    decrypt = xorEncryptDecrypt(request.body, key).decode()
+    _page = int(decrypt[:-13])
+    _timeStamp = int(decrypt[-13:])
+
+    # 构造返回值，对返回值也进行加密
+    import json
+    result = xorEncryptDecrypt(json.dumps({"code": _page}).encode(), key+"_response")
+    if abs(time.time() - int(_timeStamp) / 1000) <= 100:
+        # 返回原文
+        # return JsonResponse({"code": _page})
+
+        # 返回密文
+        return HttpResponse({result})
+    else:
+        return JsonResponse({"code": "error"})

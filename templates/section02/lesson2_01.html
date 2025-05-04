@@ -5,14 +5,57 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="/static/utils.js"></script>
+    <script src="/static/jquery.js"></script>
     <title>Lesson2_01</title>
 </head>
 <body>
-    Lesson2_01
+    <div>Lesson2_01</div>
+    <button onclick="nextpage()">Next Page</button>
+    <div id="data"></div>
 </body>
 <script>
-    let xhr = new XMLHttpRequest()
-    xhr.open("LINK", "/section02/lesson2_01_data_api", false)
-    xhr.send()
+    function xorEncryptDecrypt(input, key) {
+        let output = '';
+        for (let i = 0; i < input.length; i++) {
+            // 获取输入字符串中当前字符的字符代码
+            const charCode = input.charCodeAt(i);
+            // 用密钥对字符代码进行XOR运算
+            const keyChar = key[i % key.length]; // 重复使用密钥字符
+            const keyCharCode = keyChar.charCodeAt(0);
+            // 应用XOR并将结果转换回字符
+            const encryptedCharCode = charCode ^ keyCharCode;
+            output += String.fromCharCode(encryptedCharCode);
+        }
+        return output;
+    }
+
+
+</script>
+<script>
+    window.page = 1;
+    function nextpage(){
+        let xhr = new XMLHttpRequest()
+
+        xhr.open("LINK", "/section02/lesson2_01_data_api", false)
+
+        // 对请求值进行加密处理
+        let input = window.page.toString() + getServerTime()
+        const key = "section02_lesson2_01"
+        let decrypt = xorEncryptDecrypt(input, key)
+        console.log(decrypt)
+        xhr.send((new TextEncoder()).encode(decrypt).buffer)
+
+        // 将响应回显在页面
+        // 如果服务端对返回值做了加密，前端也需要先解密
+        let result = xorEncryptDecrypt(xhr.response, key+"_response")
+
+        // $("#data").text(JSON.parse(xhr.responseText)['code'])
+
+        // result 还是 json 字典格式
+        $("#data").text(JSON.parse(result)["code"])
+
+        window.page ++;
+    }
 </script>
 </html>
