@@ -15,4 +15,10 @@ urlpatterns = [
 
     path('lesson2_01', views.lesson2_01),
     path('lesson2_01_data_api', views.lesson2_01_data_api),
+
+    path('lesson3_01', views.lesson3_01),
+    path('lesson3_01_data_api', views.lesson3_01_data_api),
+
+    path('lesson4_01', views.lesson4_01),
+    # path('lesson4_01_data_api', views.lesson4_01_data_api),
 ]

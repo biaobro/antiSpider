@@ -1,3 +1,4 @@
+import json
 import string
 
 from django.shortcuts import render
@@ -5,6 +6,7 @@ from django.http import HttpResponse, JsonResponse
 import time
 import execjs
 import random
+import json
 
 
 # 返回服务器时间
@@ -98,8 +100,8 @@ from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_http_methods
 
 
-@csrf_exempt # 关闭CSRF校验
-@require_http_methods(["LINK"]) # 限制只接受LINK请求
+@csrf_exempt  # 关闭CSRF校验
+@require_http_methods(["LINK"])  # 限制只接受LINK请求
 def lesson2_01_data_api(request):
     def xorEncryptDecrypt(_input, _key):
         output = b""
@@ -117,8 +119,8 @@ def lesson2_01_data_api(request):
     _timeStamp = int(decrypt[-13:])
 
     # 构造返回值，对返回值也进行加密
-    import json
-    respEncrypt = xorEncryptDecrypt(json.dumps({"code": _page}).encode(), key+"_response")
+
+    respEncrypt = xorEncryptDecrypt(json.dumps({"code": _page}).encode(), key + "_response")
     print('backend:', respEncrypt)
     if abs(time.time() - int(_timeStamp) / 1000) <= 100:
         # 返回原文
@@ -128,3 +130,43 @@ def lesson2_01_data_api(request):
         return HttpResponse({respEncrypt})
     else:
         return JsonResponse({"code": "error"})
+
+
+def lesson3_01(request):
+    return render(request, "section02/lesson3_01.html")
+
+
+@csrf_exempt
+def lesson3_01_data_api(request):
+    # print(request.body)
+    from static.section02 import lesson3_01_pb2
+
+    # 验证导入成功
+    # print(lesson3_01_pb2)
+
+    def xorEncryptDecrypt(_input, _key):
+        output = b""
+        for i in range(len(_input)):
+            charCode = _input[i]  # 输入就是字节码，所以直接遍历，不需要再用 ord()转换
+            keyChar = _key[i % len(_key)]
+            keyCharCode = ord(keyChar)
+            encryptedCharCode = charCode ^ keyCharCode
+            output += chr(encryptedCharCode).encode()
+        return output
+
+    # 后端执行反序列化
+    sec2_data = lesson3_01_pb2.msg()
+    sec2_data.ParseFromString(request.body)
+    key = sec2_data.key
+    time = sec2_data.time
+    page = sec2_data.page
+    print(key, time, page)
+
+    result = xorEncryptDecrypt(json.dumps({"code": page}).encode(), key)
+
+    return HttpResponse(result)
+
+
+def lesson4_01(request):
+    nginx_env_list = ['ssl_ciphers', 'ssl_curves', 'ssl_protocol', 'ssl_ja3', 'ssl_ja3_hash', 'http2_fingerprint']
+    return JsonResponse({i: request.environ.get(i) for i in nginx_env_list})

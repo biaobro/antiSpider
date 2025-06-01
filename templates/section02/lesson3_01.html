@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="/static/section02/protobuf.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    function xorEncryptDecrypt(input, key){
+        let output = ''
+        for(let i = 0;i < input.length;i++){
+            // 获取输入的字符串中当前字符代码
+            const charCode = input.charCodeAt(i)
+
+            // 用秘钥度字符代码进行异或运算
+            const keyChar = key[i % key.length]
+            const keyCharCode = keyChar.charCodeAt(0)
+
+            // 将异或结果转换为字符
+            const encryptedCharCode = charCode ^ keyCharCode
+            output += String.fromCharCode(encryptedCharCode)
+        }
+        return output
+    }
+
+
+</script>
+<script>
+    protobuf.load("/static/section02/lesson3_01.proto", function(err, root) {
+    if (err)
+        throw err;
+
+    // 获取proto文件中的 message
+    var AwesomeMessage = root.lookupType("sec2params.msg");
+
+    // 创造数据载荷
+    var payload = {
+        key: "section02_lesson3_01",
+        time: parseInt(+new Date() / 1000), // 时间戳转换为10位，和 lesson3_01.proto 中变量定义一致
+        page: 1,
+    };
+
+    // 验证是否有错误
+    var errMsg = AwesomeMessage.verify(payload);
+    if (errMsg)
+        throw Error(errMsg);
+
+    // 将数据载荷塞入message中，获取message
+    var message = AwesomeMessage.create(payload); // or use .fromObject if conversion is necessary
+
+    // 取序列化的结果，bytes 。用buffer表示
+    var buffer = AwesomeMessage.encode(message).finish();
+
+    console.log(buffer);
+
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", "/section02/lesson3_01_data_api", false);
+    xhr.send(buffer);
+
+    // 拿到服务端返回后，通过异或算法还原
+    let result = xorEncryptDecrypt(xhr.response, payload.key);
+    console.log(result)
+});
+</script>
+</html>
