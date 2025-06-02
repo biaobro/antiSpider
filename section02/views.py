@@ -167,6 +167,67 @@ def lesson3_01_data_api(request):
     return HttpResponse(result)
 
 
+def tls_check(request):
+    from django.conf import settings
+
+    # 兼容测试环境 直接返回True, 只有正式环境通过https访问的可以拿到指纹
+    if settings.DEBUG:
+        return True
+
+    ssl_curves = request.environ.get("ssl_curves")
+    print("ssl_curves : " + ssl_curves)
+    if "secp384r1" not in ssl_curves:
+        return False
+
+    ssl_ciphers = request.environ.get("ssl_ciphers")
+    print("ssl_ciphers : " + ssl_ciphers)
+    if len(ssl_ciphers) != 355:
+        return False
+
+    http2_fingerprint = request.environ.get("http2_fingerprint")
+    print("http2_fingerprint : " + http2_fingerprint)
+    if "1:65536;2:0;4:6291456;6:262144|15663105|1:1:0:256|m,a,s,p" != http2_fingerprint:
+        return False
+
+    return True
+
+
 def lesson4_01(request):
-    nginx_env_list = ['ssl_ciphers', 'ssl_curves', 'ssl_protocol', 'ssl_ja3', 'ssl_ja3_hash', 'http2_fingerprint']
-    return JsonResponse({i: request.environ.get(i) for i in nginx_env_list})
+    # nginx_environ_list = ["ssl_ciphers", "ssl_curves", "ssl_protocol", "ssl_ja3", "ssl_ja3_hash", "http2_fingerprint", "ssl_ja4"]
+    # return JsonResponse({i: request.environ.get(i) for i in nginx_environ_list})
+    return render(request, "section02/lesson4_01.html")
+
+
+@csrf_exempt  # 关闭默认的csrf校验
+def lesson4_01_data_api(request):
+    from Crypto.Cipher import AES
+    from Crypto.Util.Padding import unpad
+    import base64
+
+    # 后端过来的数据默认是经过base64编码的
+    secureData = request.POST.get("secureData")
+
+    # 字符串转换成字节
+    bsecureData = secureData.encode()
+
+    # "sec2-lesson4-key" 和前端加密的key一致
+    aes = AES.new(b"sec2-lesson4-key", AES.MODE_ECB)
+
+    # decode 是把字节再转换为字符串
+    result = unpad(aes.decrypt(base64.b64decode(bsecureData)), 16).decode()
+    print(result)
+
+    page = int(result.split("|")[0])
+    timeStamp = int(result.split("|")[1])
+
+    # 得到的是10位时间戳
+    currtime = time.time()
+    print(currtime)
+
+    if abs(currtime - timeStamp / 1000) < 2 and tls_check(request):
+        # 用json 数据文件模拟读取数据库
+        with open("/AntiSpider/section02/utils/data.json") as f:
+            return JsonResponse(json.loads(f.read())["pages"][page - 1])
+    else:
+        with open("/AntiSpider/section02/utils/error.json") as f:
+            return JsonResponse(json.loads(f.read()))

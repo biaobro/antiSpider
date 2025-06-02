@@ -20,5 +20,5 @@ urlpatterns = [
     path('lesson3_01_data_api', views.lesson3_01_data_api),
 
     path('lesson4_01', views.lesson4_01),
-    # path('lesson4_01_data_api', views.lesson4_01_data_api),
+    path('lesson4_01_data_api', views.lesson4_01_data_api),
 ]

@@ -7539,3 +7539,684 @@ spawned uWSGI worker 1 (pid: 1168, cores: 1)
 [pid: 1168|app: 0|req: 113/113] 146.190.233.206 () {48 vars in 954 bytes} [Sun Jun  1 10:45:17 2025] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
 [pid: 1168|app: 0|req: 114/114] 146.190.233.206 () {48 vars in 872 bytes} [Sun Jun  1 10:45:21 2025] GET /ab2g => generated 179 bytes in 0 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
 [pid: 1168|app: 0|req: 115/115] 146.190.233.206 () {48 vars in 872 bytes} [Sun Jun  1 10:45:22 2025] GET /ab2h => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 1168|app: 0|req: 116/116] 64.62.197.158 () {48 vars in 958 bytes} [Sun Jun  1 17:34:08 2025] GET / => generated 179 bytes in 35 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 1168|app: 0|req: 117/117] 64.62.197.164 () {48 vars in 921 bytes} [Sun Jun  1 17:35:00 2025] GET /webui/ => generated 179 bytes in 0 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 1168|app: 0|req: 118/118] 64.62.197.158 () {48 vars in 980 bytes} [Sun Jun  1 17:35:41 2025] GET /favicon.ico => generated 179 bytes in 0 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 1168|app: 0|req: 119/119] 64.62.197.153 () {48 vars in 937 bytes} [Sun Jun  1 17:36:51 2025] GET /geoserver/web/ => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 1168|app: 0|req: 120/120] 64.62.197.157 () {48 vars in 968 bytes} [Sun Jun  1 17:37:08 2025] GET /.git/config => generated 179 bytes in 0 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 1168|app: 0|req: 121/121] 96.126.104.20 () {50 vars in 1263 bytes} [Sun Jun  1 19:04:54 2025] GET /p9z9 => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 1168|app: 0|req: 122/122] 185.242.226.12 () {48 vars in 959 bytes} [Sun Jun  1 21:19:57 2025] GET / => generated 179 bytes in 7 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 1168|app: 0|req: 123/123] 148.153.45.234 () {48 vars in 1195 bytes} [Sun Jun  1 22:12:35 2025] GET /Ma9u => generated 179 bytes in 0 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 1168|app: 0|req: 124/124] 148.153.45.234 () {48 vars in 1195 bytes} [Sun Jun  1 22:12:36 2025] GET /cXUM => generated 179 bytes in 0 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 1168|app: 0|req: 125/125] 148.153.45.234 () {48 vars in 1195 bytes} [Sun Jun  1 22:12:41 2025] GET /aab8 => generated 179 bytes in 0 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 1168|app: 0|req: 126/126] 148.153.45.234 () {48 vars in 1235 bytes} [Sun Jun  1 22:12:42 2025] GET /jquery-3.3.1.slim.min.js => generated 179 bytes in 0 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 1168|app: 0|req: 127/127] 148.153.45.234 () {48 vars in 1195 bytes} [Sun Jun  1 22:12:43 2025] GET /aab9 => generated 179 bytes in 0 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 1168|app: 0|req: 128/128] 148.153.45.234 () {48 vars in 1235 bytes} [Sun Jun  1 22:12:44 2025] GET /jquery-3.3.2.slim.min.js => generated 179 bytes in 0 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 1168|app: 0|req: 129/129] 107.170.42.172 () {48 vars in 871 bytes} [Sun Jun  1 22:47:16 2025] GET /ab2g => generated 179 bytes in 0 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 1168|app: 0|req: 130/130] 107.170.42.172 () {48 vars in 871 bytes} [Sun Jun  1 22:47:17 2025] GET /ab2h => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 1168|app: 0|req: 131/131] 107.170.42.172 () {48 vars in 953 bytes} [Sun Jun  1 22:47:18 2025] GET / => generated 179 bytes in 0 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Jun  1 22:52:22 2025] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 13 April 2025 09:42:55
+os: Linux-3.10.0-1160.119.1.el7.x86_64 #1 SMP Tue Jun 4 14:43:51 UTC 2024
+nodename: t1-bj
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /AntiSpider/AntiSpider
+writing pidfile to /AntiSpider/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /AntiSpider
+your processes number limit is 7908
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8002).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Jun  1 22:52:34 2025] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 13 April 2025 09:42:55
+os: Linux-3.10.0-1160.119.1.el7.x86_64 #1 SMP Tue Jun 4 14:43:51 UTC 2024
+nodename: t1-bj
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /AntiSpider/AntiSpider
+writing pidfile to /AntiSpider/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /AntiSpider
+your processes number limit is 7908
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8002).
+bind(): Address already in use [core/socket.c line 769]
+[pid: 1168|app: 0|req: 132/132] 123.117.158.10 () {70 vars in 1844 bytes} [Sun Jun  1 22:52:55 2025] GET /section02/lesson4_01 => generated 746 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 1168|app: 0|req: 133/133] 123.117.158.10 () {68 vars in 1759 bytes} [Sun Jun  1 22:52:55 2025] GET /favicon.ico => generated 179 bytes in 0 msecs (HTTP/2.0 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 1168|app: 0|req: 134/134] 123.117.158.10 () {74 vars in 1897 bytes} [Sun Jun  1 22:58:24 2025] GET /section02/lesson4_01 => generated 746 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Jun  1 22:58:35 2025] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 13 April 2025 09:42:55
+os: Linux-3.10.0-1160.119.1.el7.x86_64 #1 SMP Tue Jun 4 14:43:51 UTC 2024
+nodename: t1-bj
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /AntiSpider/AntiSpider
+writing pidfile to /AntiSpider/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /AntiSpider
+your processes number limit is 7908
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8002).
+bind(): Address already in use [core/socket.c line 769]
+[pid: 1168|app: 0|req: 135/135] 123.117.158.10 () {74 vars in 1897 bytes} [Sun Jun  1 22:58:39 2025] GET /section02/lesson4_01 => generated 746 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 1168|app: 0|req: 136/136] 123.117.158.10 () {74 vars in 1856 bytes} [Sun Jun  1 23:00:36 2025] GET /section02/lesson4_01 => generated 705 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 1168|app: 0|req: 137/137] 123.117.158.10 () {74 vars in 1856 bytes} [Sun Jun  1 23:00:39 2025] GET /section02/lesson4_01 => generated 705 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 1168|app: 0|req: 138/138] 123.117.158.10 () {74 vars in 1856 bytes} [Sun Jun  1 23:02:47 2025] GET /section02/lesson4_01 => generated 705 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 1168|app: 0|req: 139/139] 123.117.158.10 () {74 vars in 1856 bytes} [Sun Jun  1 23:03:07 2025] GET /section02/lesson4_01 => generated 705 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 1168|app: 0|req: 140/140] 123.117.158.10 () {74 vars in 1856 bytes} [Sun Jun  1 23:03:10 2025] GET /section02/lesson4_01 => generated 705 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 1168|app: 0|req: 141/141] 123.117.158.10 () {72 vars in 1771 bytes} [Sun Jun  1 23:03:10 2025] GET /favicon.ico => generated 179 bytes in 0 msecs (HTTP/2.0 404) 6 headers in 214 bytes (1 switches on core 0)
+Sun Jun  1 23:04:37 2025 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Jun  1 23:04:45 2025] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 13 April 2025 09:42:55
+os: Linux-3.10.0-1160.119.1.el7.x86_64 #1 SMP Tue Jun 4 14:43:51 UTC 2024
+nodename: t1-bj
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /AntiSpider/AntiSpider
+writing pidfile to /AntiSpider/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /AntiSpider
+your processes number limit is 7908
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8002 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Mar 30 2025, 00:33:28)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x26facb0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x26facb0 pid: 15635 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 15635)
+spawned uWSGI worker 1 (pid: 15641, cores: 1)
+[pid: 15641|app: 0|req: 1/1] 123.117.158.10 () {74 vars in 1897 bytes} [Sun Jun  1 23:04:52 2025] GET /section02/lesson4_01 => generated 4552 bytes in 16 msecs (HTTP/2.0 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 15641|app: 0|req: 2/2] 123.117.158.10 () {72 vars in 1784 bytes} [Sun Jun  1 23:04:53 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+1|1748790293207
+1748790293.2536893
+[pid: 15641|app: 0|req: 3/3] 123.117.158.10 () {80 vars in 2007 bytes} [Sun Jun  1 23:04:53 2025] POST /section02/lesson4_01_data_api => generated 533 bytes in 27 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 15641|app: 0|req: 4/4] 123.117.158.10 () {72 vars in 1743 bytes} [Sun Jun  1 23:05:16 2025] GET /section02/lesson1_server_time => generated 13 bytes in 1 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+2|1748790316294
+1748790316.322557
+[pid: 15641|app: 0|req: 5/5] 123.117.158.10 () {80 vars in 1966 bytes} [Sun Jun  1 23:05:16 2025] POST /section02/lesson4_01_data_api => generated 533 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 15641|app: 0|req: 6/6] 123.117.158.10 () {72 vars in 1743 bytes} [Sun Jun  1 23:05:17 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+3|1748790317100
+1748790317.117225
+[pid: 15641|app: 0|req: 7/7] 123.117.158.10 () {80 vars in 1966 bytes} [Sun Jun  1 23:05:17 2025] POST /section02/lesson4_01_data_api => generated 533 bytes in 1 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 15641|app: 0|req: 8/8] 123.117.158.10 () {72 vars in 1743 bytes} [Sun Jun  1 23:05:18 2025] GET /section02/lesson1_server_time => generated 13 bytes in 14 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+4|1748790318297
+1748790318.3170943
+[pid: 15641|app: 0|req: 9/9] 123.117.158.10 () {80 vars in 1966 bytes} [Sun Jun  1 23:05:18 2025] POST /section02/lesson4_01_data_api => generated 533 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 15641|app: 0|req: 10/10] 123.117.158.10 () {72 vars in 1743 bytes} [Sun Jun  1 23:05:18 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+5|1748790318850
+1748790318.9979048
+[pid: 15641|app: 0|req: 11/11] 123.117.158.10 () {80 vars in 1966 bytes} [Sun Jun  1 23:05:18 2025] POST /section02/lesson4_01_data_api => generated 533 bytes in 1 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 15641|app: 0|req: 12/12] 123.117.158.10 () {74 vars in 1856 bytes} [Sun Jun  1 23:06:41 2025] GET /section02/lesson4_01 => generated 4552 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 15641|app: 0|req: 13/13] 123.117.158.10 () {72 vars in 1743 bytes} [Sun Jun  1 23:06:42 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+1|1748790402339
+1748790402.3582704
+[pid: 15641|app: 0|req: 14/14] 123.117.158.10 () {80 vars in 1966 bytes} [Sun Jun  1 23:06:42 2025] POST /section02/lesson4_01_data_api => generated 533 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 15641|app: 0|req: 15/15] 123.117.158.10 () {74 vars in 1897 bytes} [Sun Jun  1 23:15:12 2025] GET /section02/lesson4_01 => generated 4552 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 15641|app: 0|req: 16/16] 123.117.158.10 () {72 vars in 1784 bytes} [Sun Jun  1 23:15:13 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+1|1748790913101
+1748790913.1181605
+[pid: 15641|app: 0|req: 17/17] 123.117.158.10 () {80 vars in 2007 bytes} [Sun Jun  1 23:15:13 2025] POST /section02/lesson4_01_data_api => generated 533 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Jun  1 23:15:32 2025] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 13 April 2025 09:42:55
+os: Linux-3.10.0-1160.119.1.el7.x86_64 #1 SMP Tue Jun 4 14:43:51 UTC 2024
+nodename: t1-bj
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /AntiSpider/AntiSpider
+writing pidfile to /AntiSpider/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /AntiSpider
+your processes number limit is 7908
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8002 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Mar 30 2025, 00:33:28)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x18d2cb0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x18d2cb0 pid: 19464 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 19464)
+spawned uWSGI worker 1 (pid: 19469, cores: 1)
+[pid: 19469|app: 0|req: 1/1] 123.117.158.10 () {74 vars in 1897 bytes} [Sun Jun  1 23:15:35 2025] GET /section02/lesson4_01 => generated 763 bytes in 12 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Jun  1 23:20:27 2025] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 13 April 2025 09:42:55
+os: Linux-3.10.0-1160.119.1.el7.x86_64 #1 SMP Tue Jun 4 14:43:51 UTC 2024
+nodename: t1-bj
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /AntiSpider/AntiSpider
+writing pidfile to /AntiSpider/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /AntiSpider
+your processes number limit is 7908
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8002 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Mar 30 2025, 00:33:28)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1114cb0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1114cb0 pid: 21240 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 21240)
+spawned uWSGI worker 1 (pid: 21245, cores: 1)
+[pid: 21245|app: 0|req: 1/1] 123.117.158.10 () {74 vars in 1897 bytes} [Sun Jun  1 23:20:33 2025] GET /section02/lesson4_01 => generated 4552 bytes in 16 msecs (HTTP/2.0 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 21245|app: 0|req: 2/2] 123.117.158.10 () {72 vars in 1784 bytes} [Sun Jun  1 23:20:33 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+1|1748791233927
+1748791233.95707
+ssl_curves : 0x6a6a:0x11ec:X25519:prime256v1:secp384r1
+ssl_ciphers : 0x6a6a:TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-RSA-AES128-SHA:ECDHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA:AES256-SHA
+http2_fingerprint : 1:65536;2:0;4:6291456;6:262144|15663105|1:1:0:256|m,a,s,p
+[pid: 21245|app: 0|req: 3/3] 123.117.158.10 () {80 vars in 2007 bytes} [Sun Jun  1 23:20:33 2025] POST /section02/lesson4_01_data_api => generated 367 bytes in 10 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 21245|app: 0|req: 4/4] 123.117.158.10 () {72 vars in 1784 bytes} [Sun Jun  1 23:20:38 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+2|1748791238001
+1748791238.0158746
+ssl_curves : 0x6a6a:0x11ec:X25519:prime256v1:secp384r1
+ssl_ciphers : 0x6a6a:TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-RSA-AES128-SHA:ECDHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA:AES256-SHA
+http2_fingerprint : 1:65536;2:0;4:6291456;6:262144|15663105|1:1:0:256|m,a,s,p
+[pid: 21245|app: 0|req: 5/5] 123.117.158.10 () {80 vars in 2007 bytes} [Sun Jun  1 23:20:38 2025] POST /section02/lesson4_01_data_api => generated 365 bytes in 1 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 21245|app: 0|req: 6/6] 123.117.158.10 () {72 vars in 1784 bytes} [Sun Jun  1 23:20:38 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+3|1748791238657
+1748791238.6765893
+ssl_curves : 0x6a6a:0x11ec:X25519:prime256v1:secp384r1
+ssl_ciphers : 0x6a6a:TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-RSA-AES128-SHA:ECDHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA:AES256-SHA
+http2_fingerprint : 1:65536;2:0;4:6291456;6:262144|15663105|1:1:0:256|m,a,s,p
+[pid: 21245|app: 0|req: 7/7] 123.117.158.10 () {80 vars in 2007 bytes} [Sun Jun  1 23:20:38 2025] POST /section02/lesson4_01_data_api => generated 382 bytes in 14 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 21245|app: 0|req: 8/8] 123.117.158.10 () {72 vars in 1784 bytes} [Sun Jun  1 23:20:39 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+4|1748791239288
+1748791239.3070314
+ssl_curves : 0x6a6a:0x11ec:X25519:prime256v1:secp384r1
+ssl_ciphers : 0x6a6a:TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-RSA-AES128-SHA:ECDHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA:AES256-SHA
+http2_fingerprint : 1:65536;2:0;4:6291456;6:262144|15663105|1:1:0:256|m,a,s,p
+[pid: 21245|app: 0|req: 9/9] 123.117.158.10 () {80 vars in 2007 bytes} [Sun Jun  1 23:20:39 2025] POST /section02/lesson4_01_data_api => generated 383 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 21245|app: 0|req: 10/10] 123.117.158.10 () {72 vars in 1784 bytes} [Sun Jun  1 23:20:40 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+5|1748791240007
+1748791240.026525
+ssl_curves : 0x6a6a:0x11ec:X25519:prime256v1:secp384r1
+ssl_ciphers : 0x6a6a:TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-RSA-AES128-SHA:ECDHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA:AES256-SHA
+http2_fingerprint : 1:65536;2:0;4:6291456;6:262144|15663105|1:1:0:256|m,a,s,p
+[pid: 21245|app: 0|req: 11/11] 123.117.158.10 () {80 vars in 2007 bytes} [Sun Jun  1 23:20:40 2025] POST /section02/lesson4_01_data_api => generated 372 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Jun  1 23:21:20 2025] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 13 April 2025 09:42:55
+os: Linux-3.10.0-1160.119.1.el7.x86_64 #1 SMP Tue Jun 4 14:43:51 UTC 2024
+nodename: t1-bj
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /AntiSpider/AntiSpider
+writing pidfile to /AntiSpider/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /AntiSpider
+your processes number limit is 7908
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8002 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Mar 30 2025, 00:33:28)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xb0bcb0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xb0bcb0 pid: 21556 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 21556)
+spawned uWSGI worker 1 (pid: 21561, cores: 1)
+[pid: 21561|app: 0|req: 1/1] 123.117.158.10 () {74 vars in 1897 bytes} [Sun Jun  1 23:21:24 2025] GET /section02/lesson4_01 => generated 4552 bytes in 16 msecs (HTTP/2.0 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 2/2] 123.117.158.10 () {72 vars in 1784 bytes} [Sun Jun  1 23:21:24 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+1|1748791284898
+1748791284.928478
+ssl_curves : 0x2a2a:0x11ec:X25519:prime256v1:secp384r1
+ssl_ciphers : 0x1a1a:TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-RSA-AES128-SHA:ECDHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA:AES256-SHA
+http2_fingerprint : 1:65536;2:0;4:6291456;6:262144|15663105|1:1:0:256|m,a,s,p
+[pid: 21561|app: 0|req: 3/3] 123.117.158.10 () {80 vars in 2007 bytes} [Sun Jun  1 23:21:24 2025] POST /section02/lesson4_01_data_api => generated 367 bytes in 12 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 4/4] 123.117.158.10 () {74 vars in 1897 bytes} [Sun Jun  1 23:21:26 2025] GET /section02/lesson4_01 => generated 4552 bytes in 1 msecs (HTTP/2.0 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 5/5] 123.117.158.10 () {72 vars in 1784 bytes} [Sun Jun  1 23:21:27 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+1|1748791287077
+1748791287.0975654
+ssl_curves : 0x2a2a:0x11ec:X25519:prime256v1:secp384r1
+ssl_ciphers : 0x1a1a:TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-RSA-AES128-SHA:ECDHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA:AES256-SHA
+http2_fingerprint : 1:65536;2:0;4:6291456;6:262144|15663105|1:1:0:256|m,a,s,p
+[pid: 21561|app: 0|req: 6/6] 123.117.158.10 () {80 vars in 2007 bytes} [Sun Jun  1 23:21:27 2025] POST /section02/lesson4_01_data_api => generated 367 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 7/7] 123.117.158.10 () {72 vars in 1784 bytes} [Sun Jun  1 23:35:26 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+2|1748792126964
+1748792126.992187
+ssl_curves : 0x7a7a:0x11ec:X25519:prime256v1:secp384r1
+ssl_ciphers : 0x6a6a:TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-RSA-AES128-SHA:ECDHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA:AES256-SHA
+http2_fingerprint : 1:65536;2:0;4:6291456;6:262144|15663105|1:1:0:256|m,a,s,p
+[pid: 21561|app: 0|req: 8/8] 123.117.158.10 () {80 vars in 2007 bytes} [Sun Jun  1 23:35:26 2025] POST /section02/lesson4_01_data_api => generated 365 bytes in 14 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 9/9] 123.117.158.10 () {72 vars in 1784 bytes} [Sun Jun  1 23:35:27 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+3|1748792127607
+1748792127.6277983
+ssl_curves : 0x7a7a:0x11ec:X25519:prime256v1:secp384r1
+ssl_ciphers : 0x6a6a:TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-RSA-AES128-SHA:ECDHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA:AES256-SHA
+http2_fingerprint : 1:65536;2:0;4:6291456;6:262144|15663105|1:1:0:256|m,a,s,p
+[pid: 21561|app: 0|req: 10/10] 123.117.158.10 () {80 vars in 2007 bytes} [Sun Jun  1 23:35:27 2025] POST /section02/lesson4_01_data_api => generated 382 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 11/11] 123.117.158.10 () {50 vars in 2040 bytes} [Sun Jun  1 23:37:57 2025] GET /section02/lesson4_01_data_api => generated 145 bytes in 83 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 12/12] 123.117.158.10 () {74 vars in 1856 bytes} [Sun Jun  1 23:39:33 2025] GET /section02/lesson4_01 => generated 4552 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 13/13] 123.117.158.10 () {72 vars in 1743 bytes} [Sun Jun  1 23:39:33 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+1|1748792373628
+1748792373.6482687
+ssl_curves : 
+[pid: 21561|app: 0|req: 14/14] 123.117.158.10 () {80 vars in 1966 bytes} [Sun Jun  1 23:39:33 2025] POST /section02/lesson4_01_data_api => generated 533 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 15/15] 123.117.158.10 () {74 vars in 1897 bytes} [Sun Jun  1 23:41:29 2025] GET /section02/lesson4_01 => generated 4552 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 16/16] 123.117.158.10 () {72 vars in 1784 bytes} [Sun Jun  1 23:41:31 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+1|1748792491069
+1748792491.092858
+ssl_curves : 0x6a6a:0x11ec:X25519:prime256v1:secp384r1
+ssl_ciphers : 0x6a6a:TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-RSA-AES128-SHA:ECDHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA:AES256-SHA
+http2_fingerprint : 1:65536;2:0;4:6291456;6:262144|15663105|1:1:0:256|m,a,s,p
+[pid: 21561|app: 0|req: 17/17] 123.117.158.10 () {80 vars in 2007 bytes} [Sun Jun  1 23:41:31 2025] POST /section02/lesson4_01_data_api => generated 367 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 18/18] 123.117.158.10 () {74 vars in 1867 bytes} [Sun Jun  1 23:45:25 2025] GET /section02/lesson4_01 => generated 4552 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 19/19] 123.117.158.10 () {72 vars in 1754 bytes} [Sun Jun  1 23:45:26 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 206 bytes (1 switches on core 0)
+1|1748792726488
+1748792726.5152934
+ssl_curves : X25519:prime256v1:secp384r1
+ssl_ciphers : TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES256-SHA:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES128-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA:AES256-SHA
+[pid: 21561|app: 0|req: 20/20] 123.117.158.10 () {80 vars in 1977 bytes} [Sun Jun  1 23:45:26 2025] POST /section02/lesson4_01_data_api => generated 533 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 21/21] 123.160.221.141 () {46 vars in 1084 bytes} [Mon Jun  2 02:00:32 2025] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 22/22] 113.141.84.149 () {58 vars in 1481 bytes} [Mon Jun  2 02:01:11 2025] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 23/23] 65.49.20.110 () {48 vars in 909 bytes} [Mon Jun  2 03:57:40 2025] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 24/24] 65.49.20.94 () {48 vars in 978 bytes} [Mon Jun  2 03:58:01 2025] GET /favicon.ico => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 25/25] 45.58.159.162 () {48 vars in 952 bytes} [Mon Jun  2 05:41:33 2025] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 26/26] 45.58.159.162 () {48 vars in 870 bytes} [Mon Jun  2 05:41:37 2025] GET /ab2g => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 27/27] 45.58.159.162 () {48 vars in 870 bytes} [Mon Jun  2 05:41:38 2025] GET /ab2h => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 28/28] 220.250.11.195 () {44 vars in 1053 bytes} [Mon Jun  2 06:05:58 2025] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 29/29] 110.188.66.231 () {46 vars in 1180 bytes} [Mon Jun  2 06:06:10 2025] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 30/30] 205.210.31.93 () {46 vars in 1350 bytes} [Mon Jun  2 07:26:45 2025] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 31/31] 162.142.125.201 () {48 vars in 1174 bytes} [Mon Jun  2 08:27:48 2025] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 32/32] 162.142.125.201 () {48 vars in 1202 bytes} [Mon Jun  2 08:28:34 2025] GET /favicon.ico => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jun  2 10:12:51 2025] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 13 April 2025 09:42:55
+os: Linux-3.10.0-1160.119.1.el7.x86_64 #1 SMP Tue Jun 4 14:43:51 UTC 2024
+nodename: t1-bj
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /antiEnv/ja4/ja4-nginx
+writing pidfile to /AntiSpider/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /AntiSpider
+your processes number limit is 7908
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8002).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jun  2 10:14:33 2025] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 13 April 2025 09:42:55
+os: Linux-3.10.0-1160.119.1.el7.x86_64 #1 SMP Tue Jun 4 14:43:51 UTC 2024
+nodename: t1-bj
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /antiEnv/ja4/ja4-nginx
+writing pidfile to /AntiSpider/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /AntiSpider
+your processes number limit is 7908
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8002).
+bind(): Address already in use [core/socket.c line 769]
+[pid: 21561|app: 0|req: 33/33] 123.117.158.10 () {68 vars in 1648 bytes} [Mon Jun  2 10:14:53 2025] GET /section02/lesson4_01 => generated 4552 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 34/34] 123.117.158.10 () {70 vars in 1629 bytes} [Mon Jun  2 10:15:34 2025] GET /section02/lesson4_01 => generated 4552 bytes in 1 msecs (HTTP/2.0 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 35/35] 123.117.158.10 () {68 vars in 1516 bytes} [Mon Jun  2 10:15:34 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+1|1748830534857
+1748830534.8732922
+ssl_curves : 
+[pid: 21561|app: 0|req: 36/36] 123.117.158.10 () {76 vars in 1739 bytes} [Mon Jun  2 10:15:34 2025] POST /section02/lesson4_01_data_api => generated 533 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 37/37] 123.117.158.10 () {70 vars in 1629 bytes} [Mon Jun  2 10:15:41 2025] GET /section02/lesson4_01 => generated 4552 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 38/38] 123.117.158.10 () {68 vars in 1516 bytes} [Mon Jun  2 10:15:42 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+1|1748830542405
+1748830542.4227726
+ssl_curves : 
+[pid: 21561|app: 0|req: 39/39] 123.117.158.10 () {76 vars in 1739 bytes} [Mon Jun  2 10:15:42 2025] POST /section02/lesson4_01_data_api => generated 533 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 40/40] 123.117.158.10 () {68 vars in 1544 bytes} [Mon Jun  2 10:15:42 2025] GET /favicon.ico => generated 179 bytes in 0 msecs (HTTP/2.0 404) 6 headers in 214 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jun  2 10:16:07 2025] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 13 April 2025 09:42:55
+os: Linux-3.10.0-1160.119.1.el7.x86_64 #1 SMP Tue Jun 4 14:43:51 UTC 2024
+nodename: t1-bj
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /antiEnv/ja4/ja4-nginx
+writing pidfile to /AntiSpider/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /AntiSpider
+your processes number limit is 7908
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8002).
+bind(): Address already in use [core/socket.c line 769]
+[pid: 21561|app: 0|req: 41/41] 123.117.158.10 () {70 vars in 1670 bytes} [Mon Jun  2 10:16:16 2025] GET /section02/lesson4_01 => generated 4552 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 42/42] 123.117.158.10 () {68 vars in 1516 bytes} [Mon Jun  2 10:16:17 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+1|1748830577639
+1748830577.6552203
+ssl_curves : 
+[pid: 21561|app: 0|req: 43/43] 123.117.158.10 () {76 vars in 1739 bytes} [Mon Jun  2 10:16:17 2025] POST /section02/lesson4_01_data_api => generated 533 bytes in 1 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 44/44] 123.117.158.10 () {70 vars in 1629 bytes} [Mon Jun  2 10:16:22 2025] GET /section02/lesson4_01 => generated 4552 bytes in 1 msecs (HTTP/2.0 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 45/45] 123.117.158.10 () {68 vars in 1516 bytes} [Mon Jun  2 10:16:23 2025] GET /section02/lesson1_server_time => generated 13 bytes in 1 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+1|1748830583133
+1748830583.1654656
+ssl_curves : 
+[pid: 21561|app: 0|req: 46/46] 123.117.158.10 () {76 vars in 1739 bytes} [Mon Jun  2 10:16:23 2025] POST /section02/lesson4_01_data_api => generated 533 bytes in 1 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 47/47] 123.117.158.10 () {68 vars in 1544 bytes} [Mon Jun  2 10:16:23 2025] GET /favicon.ico => generated 179 bytes in 0 msecs (HTTP/2.0 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 48/48] 123.117.158.10 () {70 vars in 1629 bytes} [Mon Jun  2 10:16:52 2025] GET /section02/lesson4_01 => generated 4552 bytes in 1 msecs (HTTP/2.0 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 49/49] 123.117.158.10 () {68 vars in 1516 bytes} [Mon Jun  2 10:16:52 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+1|1748830612655
+1748830612.6726027
+ssl_curves : 
+[pid: 21561|app: 0|req: 50/50] 123.117.158.10 () {76 vars in 1739 bytes} [Mon Jun  2 10:16:52 2025] POST /section02/lesson4_01_data_api => generated 533 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 51/51] 123.117.158.10 () {64 vars in 1539 bytes} [Mon Jun  2 10:17:00 2025] GET /section02/lesson4_01 => generated 4552 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 52/52] 123.117.158.10 () {62 vars in 1426 bytes} [Mon Jun  2 10:17:00 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+1|1748830620890
+1748830620.948937
+ssl_curves : 
+[pid: 21561|app: 0|req: 53/53] 123.117.158.10 () {70 vars in 1608 bytes} [Mon Jun  2 10:17:00 2025] POST /section02/lesson4_01_data_api => generated 533 bytes in 1 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 54/54] 123.117.158.10 () {70 vars in 1629 bytes} [Mon Jun  2 10:18:34 2025] GET /section02/lesson4_01 => generated 4552 bytes in 1 msecs (HTTP/2.0 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 55/55] 123.117.158.10 () {68 vars in 1516 bytes} [Mon Jun  2 10:18:35 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+1|1748830715184
+1748830715.2052464
+ssl_curves : 
+[pid: 21561|app: 0|req: 56/56] 123.117.158.10 () {76 vars in 1739 bytes} [Mon Jun  2 10:18:35 2025] POST /section02/lesson4_01_data_api => generated 533 bytes in 1 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 57/57] 123.117.158.10 () {70 vars in 1629 bytes} [Mon Jun  2 10:19:23 2025] GET /section02/lesson4_01 => generated 4552 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 58/58] 123.117.158.10 () {68 vars in 1516 bytes} [Mon Jun  2 10:19:24 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+1|1748830764036
+1748830764.0539823
+ssl_curves : 
+[pid: 21561|app: 0|req: 59/59] 123.117.158.10 () {76 vars in 1739 bytes} [Mon Jun  2 10:19:24 2025] POST /section02/lesson4_01_data_api => generated 533 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 60/60] 123.117.158.10 () {70 vars in 1629 bytes} [Mon Jun  2 10:19:43 2025] GET /section02/lesson4_01 => generated 4552 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 61/61] 123.117.158.10 () {68 vars in 1516 bytes} [Mon Jun  2 10:19:44 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+1|1748830784975
+1748830784.993764
+ssl_curves : 
+[pid: 21561|app: 0|req: 62/62] 123.117.158.10 () {76 vars in 1739 bytes} [Mon Jun  2 10:19:44 2025] POST /section02/lesson4_01_data_api => generated 533 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 63/63] 123.117.158.10 () {68 vars in 1544 bytes} [Mon Jun  2 10:19:45 2025] GET /favicon.ico => generated 179 bytes in 0 msecs (HTTP/2.0 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 64/64] 123.117.158.10 () {70 vars in 1629 bytes} [Mon Jun  2 10:19:48 2025] GET /section02/lesson4_01 => generated 4552 bytes in 1 msecs (HTTP/2.0 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 65/65] 123.117.158.10 () {68 vars in 1516 bytes} [Mon Jun  2 10:19:49 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+1|1748830789414
+1748830789.4434986
+ssl_curves : 
+[pid: 21561|app: 0|req: 66/66] 123.117.158.10 () {76 vars in 1739 bytes} [Mon Jun  2 10:19:49 2025] POST /section02/lesson4_01_data_api => generated 533 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 67/67] 123.117.158.10 () {68 vars in 1544 bytes} [Mon Jun  2 10:19:49 2025] GET /favicon.ico => generated 179 bytes in 0 msecs (HTTP/2.0 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 68/68] 123.117.158.10 () {66 vars in 1576 bytes} [Mon Jun  2 10:21:04 2025] GET /section02/lesson4_01 => generated 4552 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 69/69] 123.117.158.10 () {64 vars in 1463 bytes} [Mon Jun  2 10:21:05 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+1|1748830865027
+1748830865.0426264
+ssl_curves : 
+[pid: 21561|app: 0|req: 70/70] 123.117.158.10 () {72 vars in 1686 bytes} [Mon Jun  2 10:21:05 2025] POST /section02/lesson4_01_data_api => generated 533 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 71/71] 123.117.158.10 () {68 vars in 1572 bytes} [Mon Jun  2 10:21:25 2025] GET /section02/lesson4_01 => generated 4552 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 72/72] 123.117.158.10 () {66 vars in 1459 bytes} [Mon Jun  2 10:21:25 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+1|1748830885645
+1748830885.6647844
+ssl_curves : 
+[pid: 21561|app: 0|req: 73/73] 123.117.158.10 () {74 vars in 1682 bytes} [Mon Jun  2 10:21:25 2025] POST /section02/lesson4_01_data_api => generated 533 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 74/74] 123.117.158.10 () {66 vars in 1487 bytes} [Mon Jun  2 10:21:25 2025] GET /favicon.ico => generated 179 bytes in 1 msecs (HTTP/2.0 404) 6 headers in 214 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jun  2 10:22:34 2025] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 13 April 2025 09:42:55
+os: Linux-3.10.0-1160.119.1.el7.x86_64 #1 SMP Tue Jun 4 14:43:51 UTC 2024
+nodename: t1-bj
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /antiEnv/ja4/ja4-nginx
+writing pidfile to /AntiSpider/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /AntiSpider
+your processes number limit is 7908
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8002).
+bind(): Address already in use [core/socket.c line 769]
+[pid: 21561|app: 0|req: 75/75] 123.117.158.10 () {68 vars in 1613 bytes} [Mon Jun  2 10:22:56 2025] GET /section02/lesson4_01 => generated 4552 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 21561|app: 0|req: 76/76] 123.117.158.10 () {66 vars in 1500 bytes} [Mon Jun  2 10:22:56 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+1|1748830976643
+1748830976.7102444
+ssl_curves : 
+[pid: 21561|app: 0|req: 77/77] 123.117.158.10 () {74 vars in 1682 bytes} [Mon Jun  2 10:22:56 2025] POST /section02/lesson4_01_data_api => generated 533 bytes in 1 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+Mon Jun  2 10:23:23 2025 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jun  2 10:23:27 2025] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 13 April 2025 09:42:55
+os: Linux-3.10.0-1160.119.1.el7.x86_64 #1 SMP Tue Jun 4 14:43:51 UTC 2024
+nodename: t1-bj
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /antiEnv/ja4/ja4-nginx
+writing pidfile to /AntiSpider/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /AntiSpider
+your processes number limit is 7908
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8002 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Mar 30 2025, 00:33:28)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x21cbcb0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x21cbcb0 pid: 30758 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 30758)
+spawned uWSGI worker 1 (pid: 30760, cores: 1)
+[pid: 30760|app: 0|req: 1/1] 123.117.158.10 () {68 vars in 1613 bytes} [Mon Jun  2 10:23:42 2025] GET /section02/lesson4_01 => generated 577 bytes in 14 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 30760|app: 0|req: 2/2] 123.117.158.10 () {68 vars in 1613 bytes} [Mon Jun  2 10:23:48 2025] GET /section02/lesson4_01 => generated 577 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 30760|app: 0|req: 3/3] 123.117.158.10 () {68 vars in 1613 bytes} [Mon Jun  2 10:23:49 2025] GET /section02/lesson4_01 => generated 577 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 199 bytes (1 switches on core 0)
+Mon Jun  2 10:35:33 2025 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jun  2 10:38:11 2025] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 13 April 2025 09:42:55
+os: Linux-3.10.0-1160.119.1.el7.x86_64 #1 SMP Tue Jun 4 14:43:51 UTC 2024
+nodename: t1-bj
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /antiEnv/ja4/ja4-nginx
+writing pidfile to /AntiSpider/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /AntiSpider
+your processes number limit is 7908
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8002 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Mar 30 2025, 00:33:28)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x11fccb0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x11fccb0 pid: 3612 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3612)
+spawned uWSGI worker 1 (pid: 3616, cores: 1)
+Mon Jun  2 10:39:12 2025 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jun  2 10:39:27 2025] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 13 April 2025 09:42:55
+os: Linux-3.10.0-1160.119.1.el7.x86_64 #1 SMP Tue Jun 4 14:43:51 UTC 2024
+nodename: t1-bj
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /antiEnv/ja4/ja4-nginx
+writing pidfile to /AntiSpider/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /AntiSpider
+your processes number limit is 7908
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8002 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Mar 30 2025, 00:33:28)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x2986cb0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x2986cb0 pid: 4062 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4062)
+spawned uWSGI worker 1 (pid: 4068, cores: 1)
+[pid: 4068|app: 0|req: 1/1] 123.117.158.10 () {72 vars in 1840 bytes} [Mon Jun  2 10:40:16 2025] GET /section02/lesson2_01 => generated 2905 bytes in 35 msecs (HTTP/2.0 200) 6 headers in 208 bytes (1 switches on core 0)
+[pid: 4068|app: 0|req: 2/2] 123.117.158.10 () {70 vars in 1727 bytes} [Mon Jun  2 10:40:19 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+backend: b'\x08G\x00\x1b\r\nL\n\x12n\x11'
+[pid: 4068|app: 0|req: 3/3] 123.117.158.10 () {74 vars in 1794 bytes} [Mon Jun  2 10:40:19 2025] LINK /section02/lesson2_01_data_api => generated 11 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+[pid: 4068|app: 0|req: 4/4] 123.117.158.10 () {70 vars in 1727 bytes} [Mon Jun  2 10:40:20 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+backend: b'\x08G\x00\x1b\r\nL\n\x12m\x11'
+[pid: 4068|app: 0|req: 5/5] 123.117.158.10 () {74 vars in 1794 bytes} [Mon Jun  2 10:40:20 2025] LINK /section02/lesson2_01_data_api => generated 11 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+[pid: 4068|app: 0|req: 6/6] 123.117.158.10 () {70 vars in 1727 bytes} [Mon Jun  2 10:40:21 2025] GET /section02/lesson1_server_time => generated 13 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+backend: b'\x08G\x00\x1b\r\nL\n\x12l\x11'
+[pid: 4068|app: 0|req: 7/7] 123.117.158.10 () {74 vars in 1794 bytes} [Mon Jun  2 10:40:21 2025] LINK /section02/lesson2_01_data_api => generated 11 bytes in 0 msecs (HTTP/2.0 200) 6 headers in 206 bytes (1 switches on core 0)
+[pid: 4068|app: 0|req: 8/8] 185.242.226.12 () {48 vars in 959 bytes} [Mon Jun  2 11:35:25 2025] GET / => generated 179 bytes in 2 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 4068|app: 0|req: 9/9] 167.99.133.13 () {48 vars in 952 bytes} [Mon Jun  2 11:51:30 2025] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 4068|app: 0|req: 10/10] 167.99.133.13 () {48 vars in 870 bytes} [Mon Jun  2 11:51:34 2025] GET /ab2g => generated 179 bytes in 2 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 4068|app: 0|req: 11/11] 167.99.133.13 () {48 vars in 870 bytes} [Mon Jun  2 11:51:35 2025] GET /ab2h => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
